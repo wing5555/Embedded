@@ -204,6 +204,7 @@
 //}
 
 //调整数组使奇数全部都位于偶数前面。
+<<<<<<< HEAD
 //int main()
 //{
 //	int arr[10] = { 0 };
@@ -328,6 +329,32 @@ int main()
 		i++;
 	}
 	printf("%s", arr);
+=======
+int main()
+{
+	int arr[10] = { 0 };
+	int i = 0;
+	int count = 0;
+	int tmp = 0;
+	for (i = 0; i < 10; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	for (i = 0; i < 10; i++)
+	{
+		if (arr[i] % 2 != 0)
+		{
+			count++;
+			tmp = arr[i];
+			arr[i] = arr[count - 1];
+			arr[count - 1] = tmp;
+		}
+	}
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+>>>>>>> cdf16b330d4fd60800a7b21a50ed00aea1df512f
 	return 0;
 }
 

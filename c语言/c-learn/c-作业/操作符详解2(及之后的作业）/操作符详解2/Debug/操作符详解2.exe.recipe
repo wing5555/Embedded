@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>D:\Embedded\c语言\c-learn\c-作业\操作符详解2(及之后的作业）\Debug\操作符详解2.exe</FullPath>
+=======
+      <FullPath>D:\Embedded\c语言\c-learn\c-作业\操作符详解2\Debug\操作符详解2.exe</FullPath>
+>>>>>>> cdf16b330d4fd60800a7b21a50ed00aea1df512f
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,4 +1,8 @@
 ﻿  test.c
+<<<<<<< HEAD
 D:\Embedded\c语言\c-learn\c-作业\操作符详解2(及之后的作业）\操作符详解2\test.c(319,2): warning C4013: “gets”未定义；假设外部返回 int
 D:\Embedded\c语言\c-learn\c-作业\操作符详解2(及之后的作业）\操作符详解2\test.c(320,11): warning C4013: “strlen”未定义；假设外部返回 int
   操作符详解2.vcxproj -> D:\Embedded\c语言\c-learn\c-作业\操作符详解2(及之后的作业）\Debug\操作符详解2.exe
+=======
+  操作符详解2.vcxproj -> D:\Embedded\c语言\c-learn\c-作业\操作符详解2\Debug\操作符详解2.exe
+>>>>>>> cdf16b330d4fd60800a7b21a50ed00aea1df512f
