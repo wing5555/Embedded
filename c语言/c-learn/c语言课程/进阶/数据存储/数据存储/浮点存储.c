@@ -50,22 +50,71 @@
 //	return 0;
 //}
 
-union data {
-    int n;
-    char ch;
-    short m;
-};
-int main() {
-    union data a;
-    printf("%d, %d\n", sizeof(a), sizeof(union data));
-    a.n = 0x40;
-    printf("%X, %c, %hX\n", a.n, a.ch, a.m);
-    a.ch = '9';
-    printf("%X, %c, %hX\n", a.n, a.ch, a.m);
-    a.m = 0x2059;
-    printf("%X, %c, %hX\n", a.n, a.ch, a.m);
-    a.n = 0x3E25AD54;
-    printf("%X, %c, %hX\n", a.n, a.ch, a.m);
+//union data {
+//    int n;
+//    char ch;
+//    short m;
+//};
+//int main() 
+//{
+//    union data a;
+//    printf("%d, %d\n", sizeof(a), sizeof(union data));//4,4
+//    a.n = 0x40;
+//    printf("%X, %c, %hX\n", a.n, a.ch, a.m);//40 ,@ ,40
+//    a.ch = '9';
+//    printf("%X, %c, %hX\n", a.n, a.ch, a.m);//9, , 9
+//    a.m = 0x2059;
+//    printf("%X, %c, %hX\n", a.n, a.ch, a.m);//2059 Y 2059
+//    a.n = 0x3E25AD54;
+//    printf("%X, %c, %hX\n", a.n, a.ch, a.m);//3E25AD54 T AD54
+//
+//    return 0;
+//}
 
-    return 0;
-}
+//int check_sys()
+//{
+//	union
+//	{
+//		int i;
+//		char c;
+//	}un;
+//	un.i = 1;
+//	return un.c;
+//}
+//int main()
+//{
+//	int ret = check_sys();
+//	if (ret == 1)
+//	{
+//		printf("Ð¡¶Ë\n");
+//	}
+//	else
+//	{
+//		printf("´ó¶Ë\n");
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	unsigned int i;
+//	for (i = 9; i >= 0; i--)
+//	{
+//		printf("%u\n", i);
+//	}
+//}
+
+//int main()
+//{
+//	char a[1000];
+//	int i;
+//	int j;
+//	for (i = 0; i < 1000; i++)
+//	{
+//		a[i] = -1 - i;
+//	}
+//	printf("%d", strlen(a));
+//	return 0;
+//}
+
+

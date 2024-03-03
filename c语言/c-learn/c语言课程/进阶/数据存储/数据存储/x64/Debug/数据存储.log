@@ -1,6 +1,3 @@
 ﻿  浮点存储.c
-D:\Embedded\c语言\c-learn\c语言课程\进阶\数据存储\数据存储\浮点存储.c(60,12): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-D:\Embedded\c语言\c-learn\c语言课程\进阶\数据存储\数据存储\浮点存储.c(60,12): message : 请考虑在格式字符串中使用“%zd”
-D:\Embedded\c语言\c-learn\c语言课程\进阶\数据存储\数据存储\浮点存储.c(60,12): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“size_t”
-D:\Embedded\c语言\c-learn\c语言课程\进阶\数据存储\数据存储\浮点存储.c(60,12): message : 请考虑在格式字符串中使用“%zd”
+D:\Embedded\c语言\c-learn\c语言课程\进阶\数据存储\数据存储\浮点存储.c(115,7): warning C4013: “strlen”未定义；假设外部返回 int
   数据存储.vcxproj -> D:\Embedded\c语言\c-learn\c语言课程\进阶\数据存储\x64\Debug\数据存储.exe
