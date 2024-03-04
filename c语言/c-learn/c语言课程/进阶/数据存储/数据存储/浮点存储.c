@@ -117,4 +117,26 @@
 //	return 0;
 //}
 
+//unsigned char i = 0;
+//int main()
+//{
+//	for (i = 0; i <= 255; i++)
+//	{
+//		printf("hello world%d\n",i);
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int n = 9;//00000000000000000000000000001001
+//	float* pFloat = (float*)&n;
+//	printf("n的值为：%d\n", n);//9
+//	printf("*pFloat的值为：%f\n", *pFloat);//0
+//	*pFloat = 9.0;//1001.0 S=0,M=1.001,E=3 0 10000010 00100000000000000000000
+//	printf("num的值为：%d\n", n);//1099956224
+//	printf("*pFloat的值为：%f\n", *pFloat);//9.0
+//	return 0;
+//}
+
 
