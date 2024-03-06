@@ -1,6 +1,7 @@
 --cpu Cortex-M3
 "..\output\main.o"
 "..\output\startup_stm32f10x_hd.o"
+"..\output\stmfx_gpio.o"
 --strict --scatter "..\Output\REG-LED.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
