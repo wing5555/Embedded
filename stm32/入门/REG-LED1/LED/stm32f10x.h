@@ -1,3 +1,5 @@
+#ifndef STM32F10X_H
+#define STM32F10X_H
 //#if 0
 //外设与总线基地址
 #define PHRIPH_BASE    (unsigned int) 0x40000000
@@ -21,37 +23,37 @@
 
 
 //GPIO寄存器结构体声明
-typedef unsigned int    uint_32;
-typedef unsigned short    uint_16;
+typedef unsigned int    uint32_t;
+typedef unsigned short    uint16_t;
 typedef struct
 {
-	uint_32 CRL;
-	uint_32 CRH;
-	uint_32 IDR;
-	uint_32 ODR;
-	uint_32 BSRR;
-	uint_32 BRR;
-	uint_32 LCKR;
+	uint32_t CRL;
+	uint32_t CRH;
+	uint32_t IDR;
+	uint32_t ODR;
+	uint32_t BSRR;
+	uint32_t BRR;
+	uint32_t LCKR;
 }GPIO_Typedef;
 #define GPIOB     ((GPIO_Typedef*) GPIO_BASE)
 
 //RCC外设的寄存器结构体声明
 typedef struct
 {
-	uint_32 CR;
-	uint_32 CFGR;
-	uint_32 CIR;
-	uint_32 APB2RSTR;
-	uint_32 APB1RSTR;
-	uint_32 AHBENR;
-	uint_32 APB2ENR;
-	uint_32 APB1ENR;
-	uint_32 BDCR;
-	uint_32 CSR;
+	uint32_t CR;
+	uint32_t CFGR;
+	uint32_t CIR;
+	uint32_t APB2RSTR;
+	uint32_t APB1RSTR;
+	uint32_t AHBENR;
+	uint32_t APB2ENR;
+	uint32_t APB1ENR;
+	uint32_t BDCR;
+	uint32_t CSR;
 }RCC_Typedef;
 #define RCC   ((RCC_Typedef*) RCC_BASE)
 
 
 
 //#endif
-
+#endif //STM32F10X_H
