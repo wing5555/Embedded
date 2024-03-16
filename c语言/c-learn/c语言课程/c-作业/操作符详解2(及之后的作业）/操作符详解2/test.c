@@ -358,16 +358,16 @@
 //	return 0;
 //}
 
-#include <windows.h>
-int main()
-{
-	while (1)
-	{
-		printf("hehe");
-		Sleep(1000);
-	}
-	return 0;
-}
+//#include <windows.h>
+//int main()
+//{
+//	while (1)
+//	{
+//		printf("hehe");
+//		Sleep(1000);
+//	}
+//	return 0;
+//}
 
 //int main()
 //{
@@ -388,3 +388,68 @@ int main()
 //	printf("%s", ch2);
 //	return 0;
 //}
+
+//int main()
+//{
+//	int arr[] = { 2,4,6,8,10,12,14,16,18,20 };
+//	int count = 0;
+//	int i = 0;
+//	int tmp = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//			do
+//			{
+//				if (arr[i] % 2 == 0)
+//				{
+//					tmp = arr[i];
+//					arr[i] = arr[9 - count];
+//					arr[9 - count] = tmp;
+//					count++;
+//				}
+//			} while (count<9 && arr[i] % 2 == 0);
+//		if(count>=9)
+//		{
+//			break;
+//		}
+//	}
+//	for (i = 0; i < 9; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+Fun(int* arr, int sz)
+{
+	int r = 0;
+	int l = sz - 1;
+	int tmp = 0;
+	while(r<l)
+	{
+		while (r<sz&&arr[r] % 2 == 1)
+		{
+			r++;
+		}
+		while (l>0&& arr[l] % 2 == 0)
+		{
+			l--;
+		}
+		tmp = arr[l];
+		arr[l] = arr[r];
+		arr[r] = tmp;
+	}
+}
+int main()
+{
+	int arr[] = { 2,4,6,8,10,12,14,16,18,20 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int i = 0;
+	Fun(arr, sz);
+	for (i = 0; i < 9; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	return 0;
+}
+
+
