@@ -419,37 +419,116 @@
 //	return 0;
 //}
 
-Fun(int* arr, int sz)
+//Fun(int* arr, int sz)
+//{
+//	int r = 0;
+//	int l = sz - 1;
+//	int tmp = 0;
+//	while(r<l)
+//	{
+//		while (r<sz&&arr[r] % 2 == 1)
+//		{
+//			r++;
+//		}
+//		while (l>0&& arr[l] % 2 == 0)
+//		{
+//			l--;
+//		}
+//		tmp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = tmp;
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 2,4,6,8,10,12,14,16,18,20 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int i = 0;
+//	Fun(arr, sz);
+//	for (i = 0; i < 9; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+//void Merge(int* arr1, int* arr2, int* arr3, int m, int n)
+//{
+//	int i = 0;
+//	int j = 0;
+//	int k = 0;
+//	while (i < m && j < n)
+//	{
+//		if (arr1[i] <= arr2[j])
+//		{
+//			arr3[k] = arr1[i];
+//			i++;
+//			k++;
+//			if (i == m)
+//			{
+//				while(j<n)
+//				{
+//					arr3[k] = arr2[j];
+//					j++;
+//					k++;
+//				}
+//				break;
+//			}
+//		}
+//		if (arr1[i] > arr2[j])
+//		{
+//			arr3[k] = arr2[j];
+//			j++;
+//			k++;
+//			if (j == n)
+//			{
+//				while (i < m)
+//				{
+//					arr3[k] = arr1[i];
+//					i++;
+//					k++;
+//				}
+//				break;
+//
+//			}
+//		}
+//
+//	}
+//}
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	scanf("%d%d", &m, &n);
+//	int arr1[100] = { 0 };
+//	int arr2[100] = { 0 };
+//	int arr3[100] = { 0 };
+//	int i = 0;
+//	for(i=0;i<m;i++)
+//	{
+//		scanf("%d", &arr1[i]);
+//	}
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr2[i]);
+//	}
+//	Merge(arr1, arr2, arr3, m, n);
+//	for (i = 0; i < m + n; i++)
+//	{
+//		printf("%d ", arr3[i]);
+//	}
+//	return 0;
+//}
+
+typedef enum
 {
-	int r = 0;
-	int l = sz - 1;
-	int tmp = 0;
-	while(r<l)
-	{
-		while (r<sz&&arr[r] % 2 == 1)
-		{
-			r++;
-		}
-		while (l>0&& arr[l] % 2 == 0)
-		{
-			l--;
-		}
-		tmp = arr[l];
-		arr[l] = arr[r];
-		arr[r] = tmp;
-	}
-}
+	GPIO_Speed_10MHz = 1,
+	GPIO_Speed_2MHz,
+	GPIO_Speed_50MHz
+}GPIOSpeed_TypeDef;
 int main()
 {
-	int arr[] = { 2,4,6,8,10,12,14,16,18,20 };
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	int i = 0;
-	Fun(arr, sz);
-	for (i = 0; i < 9; i++)
-	{
-		printf("%d ", arr[i]);
-	}
+	GPIOSpeed_TypeDef A;
+	A = 5;
 	return 0;
 }
-
-

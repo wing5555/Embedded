@@ -1,8 +1,0 @@
-Dependencies for Project 'REG-LED', Target 'Target 1': (DO NOT MODIFY !)
-F (.\main.c)(0x65E5DA1C)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\REG-LED1(practice） -I ..\..\入门-I.\RTE\_Target_1-ID:\AppData\keil_v5\keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\AppData\keil_v5\keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (stm32f10x.h)(0x65E720E5)
-F (.\stm32f10x.h)(0x65E720E5)()
-F (.\startup_stm32f10x_hd.s)(0x65C86BBD)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_Target_1-ID:\AppData\keil_v5\keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\AppData\keil_v5\keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 526" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
-F (.\stm32f10x_gpio.c)(0x65E8705E)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\REG-LED1(practice） -I ..\..\入门-I.\RTE\_Target_1-ID:\AppData\keil_v5\keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-ID:\AppData\keil_v5\keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="526" -DSTM32F10X_HD-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
-I (stm32f10x_gpio.h)(0x65E86E6E)
-I (stm32f10x.h)(0x65E720E5)
