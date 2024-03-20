@@ -10,6 +10,7 @@
       <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -47,14 +48,14 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>..\</OutputDirectory>
+          <OutputDirectory>.\Objects\</OutputDirectory>
           <OutputName>Templat</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>..\</ListingPath>
+          <ListingPath>.\Listings\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -335,9 +336,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F10X_HD.USE_STDPERIPH_DRIVER</Define>
+              <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\STM32F10x_StdPeriph_Driver\inc</IncludePath>
+              <IncludePath>..\Libraries\STM32F10x_StdPeriph_Driver\inc;..\Libraries\CMSIS;..\User</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -384,7 +385,7 @@
             <File>
               <FileName>startup_stm32f10x_hd.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s</FilePath>
+              <FilePath>..\Libraries\CMSIS\startup\startup_stm32f10x_hd.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -392,14 +393,14 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
-              <FileName>core_cm3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c</FilePath>
-            </File>
-            <File>
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c</FilePath>
+              <FilePath>..\Libraries\CMSIS\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>core_cm3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libraries\CMSIS\core_cm3.c</FilePath>
             </File>
           </Files>
         </Group>
