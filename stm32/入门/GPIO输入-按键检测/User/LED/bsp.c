@@ -2,7 +2,7 @@
 
 void LED_G_Config(void)
 {
-	
+	RCC_APB2PeriphClockCmd( LED_G_GPIO_CLK, ENABLE);
 	GPIO_InitTypeDef GPIO_InitStruct;
 	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_Out_PP;
 	GPIO_InitStruct.GPIO_Pin=LED_G_GPIO_Pin;
@@ -12,7 +12,7 @@ void LED_G_Config(void)
 
 void LED_R_Config(void)
 {
-	
+	RCC_APB2PeriphClockCmd( LED_R_GPIO_CLK, ENABLE);
 	GPIO_InitTypeDef GPIO_InitStruct;
 	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_Out_PP;
 	GPIO_InitStruct.GPIO_Pin=LED_R_GPIO_Pin;
@@ -22,7 +22,7 @@ void LED_R_Config(void)
 
 void LED_B_Config(void)
 {
-	
+	RCC_APB2PeriphClockCmd( LED_B_GPIO_CLK, ENABLE);
 	GPIO_InitTypeDef GPIO_InitStruct;
 	GPIO_InitStruct.GPIO_Mode=GPIO_Mode_Out_PP;
 	GPIO_InitStruct.GPIO_Pin=LED_B_GPIO_Pin;

@@ -15,5 +15,9 @@ uint8_t KEY_CHECK(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin);
 void KEY1_Config(void);
 void KEY2_Config(void);
 
+//按键按下高电平
+#define ON 1
+#define OFF 0
+
 #endif /*_BSP_KEY_H*/
 

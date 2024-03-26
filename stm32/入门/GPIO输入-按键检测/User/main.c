@@ -2,18 +2,16 @@
 #include "bsp.h"
 #include "bsp_key.h"
 
-void Delay(uint32_t count)
-{
-	for(;count > 0;count--)
-		;
-}
+//void Delay(uint32_t count)
+//{
+//	for(;count > 0;count--)
+//		;
+//}
 int main(void)
 {
-	RCC_APB2PeriphClockCmd( LED_G_GPIO_CLK, ENABLE);
 	LED_G_Config();
 	LED_G(ON);
 	
-	RCC_APB2PeriphClockCmd( LED_B_GPIO_CLK, ENABLE);
 	LED_B_Config();
 	LED_B(OFF);
 	
@@ -22,11 +20,11 @@ int main(void)
 	KEY2_Config();
 	while(1)
 	{
-		if (KEY_CHECK(KEY1_GPIO_Port,KEY1_GPIO_Pin)==1)
+		if (KEY_CHECK(KEY1_GPIO_Port,KEY1_GPIO_Pin)==ON)
 		{
 			LED_G_TOGGLE;
 		}
-		if (KEY_CHECK(KEY2_GPIO_Port,KEY2_GPIO_Pin)==1)
+		if (KEY_CHECK(KEY2_GPIO_Port,KEY2_GPIO_Pin)==OFF)
 		{
 			LED_B_TOGGLE;
 		}
