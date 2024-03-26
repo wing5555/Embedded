@@ -9,9 +9,17 @@
 //	printf("haha");
 //}
 
-#define assert_param(expr) ((void)0)
+//#define assert_param(expr) ((void)0)
+//int main()
+//{
+//	printf("%d\n", assert_param(5));
+//	return 0;
+//}
+
+#define A(n) (n+1)
 int main()
 {
-	printf("%d\n", assert_param(5));
-	return 0;
+	int a = 0;
+	a=A(1);
+	printf("%d", a);
 }
